@@ -25,6 +25,8 @@
         * [Coil](https://coil-kt.github.io/coil/) for image loading.
         
         * [Accomponist Pager](https://google.github.io/accompanist/pager/) for pager view.
+        
+        * [Lottie](https://github.com/airbnb/lottie-android) for playing animations.
 
     
     * Threding
