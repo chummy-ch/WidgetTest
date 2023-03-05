@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/widget_default" />
+
+    <ImageView
+        android:id="@+id/stroke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <ViewFlipper
+        android:id="@+id/live_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoStart="true"
+        android:flipInterval="5000" />
+
+    <LinearLayout
+        android:id="@+id/nested_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/user_info_padding"
+        android:background="@drawable/rounded_corner_shape"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/user_photo_image_view"
+            android:layout_width="@dimen/sender_photo_size"
+            android:layout_height="@dimen/sender_photo_size" />
+
+        <TextView
+            android:id="@+id/user_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="15.dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoStart="true"
+        android:flipInterval="100" />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="@dimen/history_carousel_play_button_size"
+        android:layout_height="@dimen/history_carousel_play_button_size"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play"
+        android:visibility="gone" />
+
+</FrameLayout>

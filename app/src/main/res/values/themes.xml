@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LocketWidget" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="android:windowBackground">@color/pink_200</item>
+        <item name="backgroundColor">@color/pink_200</item>
+        <item name="colorPrimary">#FF8F42</item>
+        <item name="colorPrimaryVariant">@color/pink_400</item>
+        <item name="colorOnPrimary">@color/black_400</item>
+        <item name="background">@color/pink_200</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange_200</item>
+        <item name="colorSecondaryVariant">@color/orange_300</item>
+        <item name="colorOnSecondary">@color/orange_200</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@color/pink_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.LocketWidget.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.LocketWidget.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.LocketWidget.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
